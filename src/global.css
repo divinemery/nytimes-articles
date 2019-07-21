@@ -6,3 +6,76 @@ html, body, #root {
 body {
   margin: 0;
 }
+
+/*---layout---*/
+.ant-layout{
+  height:inherit;
+}
+
+header.ant-layout-header{
+  background-color: black;
+  color: white;
+}
+.ant-layout-footer {
+  line-height: 1.5;
+}
+.ant-layout-sider {
+  background: #d3d3d333;
+  color: #fff;
+  line-height: 120px;
+}
+.ant-layout-content {
+  background: white;
+  color: #fff;
+  min-height: 120px;
+  line-height: 120px;
+}
+/********************************/
+
+/***NewsList Style***/
+
+.ant-list-item-meta{
+  margin-bottom: 8px!important;
+}
+
+h4.ant-list-item-meta-title{
+  font-size: 1.35rem!important;
+  font-weight: 600;
+  margin-bottom: 7px!important;
+  cursor:pointer!important;
+}
+h4.ant-list-item-meta-title a{
+  color:black;
+}
+
+.ant-list-item-extra{
+  width: 210px;
+}
+
+@media(max-width:1168px){
+  .ant-layout-sider {
+    display: none;
+  }
+}
+
+@media(max-width:520px){
+  h4.ant-list-item-meta-title{
+    font-size: 1.15rem!important;
+    line-height: 1.25rem!important;
+  }
+
+  .ant-list-item-main,
+  .ant-list-item-extra,
+  li.ant-list-item{
+    flex: unset!important;
+    display: block!important;
+  }
+  .ant-list-item-extra{
+    margin-top:10px!important;
+    width:100%;
+  }
+}
+
+
+
+

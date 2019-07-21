@@ -1,18 +1,17 @@
-import styles from './index.css';
+import styles from './common.css';
+import { connect } from 'dva';
+import NewsList from '../components/NewsList';
 
 
-export default function() {
+export const Index = ({ dispatch, news }) => {
   return (
-    <div className={styles.normal}>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
-        <li>
-          <a href="https://umijs.org/guide/getting-started.html">
-            Getting Started
-          </a>
-        </li>
-      </ul>
+    <div className={styles.listContainer}>
+      <NewsList news={news} />
     </div>
   );
-}
+};
+
+
+export default connect(({ news }) => ({
+  news,
+}))(Index);

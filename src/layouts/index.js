@@ -1,11 +1,17 @@
+import { Layout } from 'antd';
 import styles from './index.css';
+const { Header, Footer, Sider, Content } = Layout;
 
 function BasicLayout(props) {
   return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to umi!</h1>
-      {props.children}
-    </div>
+    <Layout className={styles.main}>
+      <Header></Header>
+      <Layout>
+        <Sider></Sider>
+        <Content>{props.children}</Content>
+        <Sider></Sider>
+      </Layout>
+    </Layout>
   );
 }
 

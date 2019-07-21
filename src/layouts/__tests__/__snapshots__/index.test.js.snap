@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout: BasicLayout Render correctly 1`] = `
+<section
+  className="main ant-layout"
+>
+  <header
+    className="ant-layout-header"
+  />
+  <section
+    className="ant-layout ant-layout-has-sider"
+  >
+    <aside
+      className="ant-layout-sider ant-layout-sider-dark"
+      style={
+        Object {
+          "flex": "0 0 200px",
+          "maxWidth": "200px",
+          "minWidth": "200px",
+          "width": "200px",
+        }
+      }
+    >
+      <div
+        className="ant-layout-sider-children"
+      />
+    </aside>
+    <main
+      className="ant-layout-content"
+    />
+    <aside
+      className="ant-layout-sider ant-layout-sider-dark"
+      style={
+        Object {
+          "flex": "0 0 200px",
+          "maxWidth": "200px",
+          "minWidth": "200px",
+          "width": "200px",
+        }
+      }
+    >
+      <div
+        className="ant-layout-sider-children"
+      />
+    </aside>
+  </section>
+</section>
+`;
