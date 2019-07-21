@@ -1,6 +1,5 @@
 import { Skeleton, Switch, List, Avatar, Icon } from 'antd';
 import styles from './newslist.css';
-import router from 'umi/router';
 
 
 const NewsList = ({ news }) => {
@@ -25,8 +24,7 @@ const NewsList = ({ news }) => {
         size="large"
         dataSource={news.data}
         renderItem={item => (
-          <List.Item
-          // onClick={()=> {  router.push('/newsArticle')}}
+          <List.Item          
           key={item.id}
           extra={
             <div className={styles.imageBlock}>

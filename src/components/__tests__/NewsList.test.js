@@ -1,8 +1,8 @@
-import { Index } from '..';
+import NewsList  from '../NewsList.js';
 import renderer from 'react-test-renderer';
 import mockNews from '../../../mock/mockNews';
 
-describe('Page: index', () => {
+describe('Component: NewsList', () => {
   it('Render correctly', () => {    
     let mockData1 = {
       data: [],
@@ -20,17 +20,17 @@ describe('Page: index', () => {
       loading: true
     };
 
-    const loadingPage = renderer.create(<Index news={mockData1} />);
-    const emptyDataPage = renderer.create(<Index news={mockData2} />);
-    const dataPage = renderer.create(<Index news={mockData3} />);
+    const loadingCmp = renderer.create(<NewsList news={mockData1} />);
+    const emptyDataCmp = renderer.create(<NewsList news={mockData2} />);
+    const dataCmp = renderer.create(<NewsList news={mockData3} />);
 
-    let tree = loadingPage.toJSON();
+    let tree = loadingCmp.toJSON();
     expect(tree).toMatchSnapshot();
 
-    tree = emptyDataPage.toJSON();
+    tree = emptyDataCmp.toJSON();
     expect(tree).toMatchSnapshot();
 
-    tree = dataPage.toJSON();
+    tree = dataCmp.toJSON();
     expect(tree).toMatchSnapshot();
 
   });
