@@ -48,3 +48,9 @@ Run all the tests:
 $ yarn test src
 ```
 
+Coverage report:
+
+```sh
+$ yarn test --coverage
+```
+
