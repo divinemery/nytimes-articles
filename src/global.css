@@ -12,10 +12,22 @@ body {
   height:inherit;
 }
 
+.ant-page-header{
+  height: inherit;
+  background-color: black;
+  color: white;
+  line-height: 32px;
+}
+
 header.ant-layout-header{
   background-color: black;
   color: white;
+  padding: 0;
 }
+.ant-page-header-heading-title{
+  color:white;
+}
+
 .ant-layout-footer {
   line-height: 1.5;
 }
@@ -50,6 +62,21 @@ h4.ant-list-item-meta-title a{
 
 .ant-list-item-extra{
   width: 210px;
+}
+
+@media(min-width: 1367px){
+  .ant-layout-sider {
+    width:20%!important;
+    min-width:20%!important;
+  }
+}
+
+@media(min-width:1169px) and (max-width:1366px){
+  .ant-layout-sider {
+    width:150px!important;
+    min-width:150px!important;
+    max-width:150px!important;
+  }
 }
 
 @media(max-width:1168px){

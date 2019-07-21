@@ -6,7 +6,21 @@ exports[`Layout: BasicLayout Render correctly 1`] = `
 >
   <header
     className="ant-layout-header"
-  />
+  >
+    <div
+      className="ant-page-header"
+    >
+      <div
+        className="ant-page-header-heading"
+      >
+        <span
+          className="ant-page-header-heading-title"
+        >
+          Newyork Times Most Popular
+        </span>
+      </div>
+    </div>
+  </header>
   <section
     className="ant-layout ant-layout-has-sider"
   >

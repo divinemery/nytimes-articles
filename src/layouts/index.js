@@ -1,11 +1,13 @@
-import { Layout } from 'antd';
+import { Layout, PageHeader } from 'antd';
 import styles from './index.css';
 const { Header, Footer, Sider, Content } = Layout;
 
 function BasicLayout(props) {
   return (
     <Layout className={styles.main}>
-      <Header></Header>
+      <Header>
+        <PageHeader title="Newyork Times Most Popular"  />
+      </Header>
       <Layout>
         <Sider></Sider>
         <Content>{props.children}</Content>
