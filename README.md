@@ -27,7 +27,7 @@ $ cd nytimes-articles
 umi installation:
 
 ```sh
-$ yarn add global umi
+$ yarn global add umi
 ```
 
 Installation of node packages:
