@@ -1,6 +1,6 @@
 # New York Times Articles
 Small React application that list the most popular articles 
-viewed from the New York Times Magasine. The project is based on:
+viewed from the New York Times Magazine. The project is based on:
 * <strong>ES2015+</strong> 
 * <strong>React</strong>
 * <strong>UmiJS:</strong> Pluggable enterprise-level react application framework.
