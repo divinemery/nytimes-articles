@@ -1,0 +1,19 @@
+apiVersion: 1
+
+datasources:
+- name: BigQuery
+  type: doitintl-bigquery-datasource
+  access: proxy
+  isDefault: true
+  jsonData:
+       authenticationType: jwt
+       clientEmail: bigquery@arabee-development.iam.gserviceaccount.com
+       defaultProject: arabee-development
+       tokenUri: https://oauth2.googleapis.com/token
+  secureJsonData:
+       privateKey: |
+          -----BEGIN PRIVATE KEY-----
+          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCldOKaG5OlVdtv\nHUqWJ43Pe7h7Adg+MEB4Nq2wG0qHfSXtR68ss2mvEdMCfojs0Ck010jcnJ0OETca\nwQRHlm6BdgEeO5G3XzwsWaA/WxxUGPJlXvL0IRhE0EGNZ69u4eIlIXiEAfsz/rSc\n6Khc2NrKVYLXaomQ0idRdL4umkf+U9lAIVQh6i5VooZVecY6XwNUKHllq0LTGHbk\n0YMGH3cyy0Sns8lFKP6V0yogdNsgAL42Fw/xpgYZsKJzilNV2MvfAkMtJ94OXSXk\numRnaCyDsHjVWF0Y+YLHBet6r91q1u9pNv0RrXnuKnQaoWvXlr8dtKbVc1U7zj/z\n/p25pA6PAgMBAAECggEADG0BTEqQOuVTnqjSqQEydL0ZZzTbF8c0PZ2kS1VZXQsz\nNc/hjNgH3VaCLtia5udhLi88MRlFRZZZuZV6VqKqYj2fADVquvHuM8nNWkS46sCZ\nilm9oZj6A3JSd1CsoQVaIFNprhxJ+ycrSvIWxtZLDtFU4LcHECHAQy1Nz8kqvqOl\ng6mWIolKk0kqAJbMydU3BUTTj4C4x20HR5TfgJRdx1jfFW5uiy4oWgXSpQFhBv7U\nu4tgWJUMp5g7FjzP3OO9CHqka5XhWeD0utBz9NGfj7E0+raE6QkXjV11US6q62Ys\nRX+yd+mL3gF3TYRadkl8lcY72RslPJF5tKoZx4VTjQKBgQDOG6sRJgSbbytLGopq\nju+KnpGRCm5YhuKhjVojwCG6OxLDi31PAi7JLEVd7hWhNpEN5qiMG84TRF2h0XDJ\nH9NjvP/ZqEdrITmz6hJooIlcJdDfhoiOm60Hd0GFuPnvMo7NPn0WAHQBO85KlhsE\njMvn+/jwJOc/aNg8BdzcV9kMXQKBgQDNghSS/brQL2Au6EMAZ9yM+lvbCFcftR9E\nLQqpDD7++oNQ2i5qtmj6Rc2Zs3D8rER9FXUXd9XSMAPdHCC61TO6fjX/Qv7CMIXZ\nM9XLAlE24rE/CNhxavJY1njUi8hSEHPFtGFuEgM5fUfVwpPFno2yZ9SUBcVlAvm2\nHHxSZaC32wKBgDca6qfRFFZCaL7Rv8QxpxXWw3CV61674Yfz9O+uBNZ3yNKDTuN6\n3+tlbL5qU1og7rNawiGDpZs9IhOLna4IVkpKU9Vrynx4C6dwo69ZjKAYdDnvDD+k\nm6RtXBVWmWw8hjWVyXfCc0GJLeR/MYYL5tCFa8847qLjczzJDH3U9vD5AoGAOV2U\nTKvTGAYBfVaMTXKwmBHSzkN3vnwarDc+gI3Qj/Bx84HT7ynYB/SwPbVfVsjnnVr+\nAn0LDM8mZPRTFpQpCmfsvsJ+xsowsr7LcQ3GieGhxIy9jntiBvZnaD1Uv8Oj7Y46\nnDUe/U9BXCQih8mImEJvjppFzbqU5gbxlTaVNH0CgYEAuL8vRL+8URuxi/CETvEO\nKXzAKGu30+u1K4yTiK3i+1v75+MUcHq/ENMvlJxKOqvhUkWIqKJjxdjRSFiEkH/g\nt6k1+gbRmlkCIr8yuidE0Oh3qBKSo/TzJYcmtljZXT0CxcZFyGSRcr8Xjd5C4lzc\nDPN5Nx9JbnKhPyway8tlnC4=
+          -----END PRIVATE KEY-----
+  version: 2
+  readOnly: false
